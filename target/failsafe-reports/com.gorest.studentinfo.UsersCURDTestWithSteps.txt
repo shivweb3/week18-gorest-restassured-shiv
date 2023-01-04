@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: com.gorest.studentinfo.UsersCURDTestWithSteps
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 1.75 sec <<< FAILURE! - in com.gorest.studentinfo.UsersCURDTestWithSteps
+test001(com.gorest.studentinfo.UsersCURDTestWithSteps)  Time elapsed: 0.182 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.gorest.studentinfo.UsersCURDTestWithSteps.test001(UsersCURDTestWithSteps.java:41)
+
+test002(com.gorest.studentinfo.UsersCURDTestWithSteps)  Time elapsed: 0.01 sec  <<< ERROR!
+java.lang.IllegalArgumentException: baseURI cannot be null
+	at io.restassured.internal.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.RequestSpecificationImpl.<init>(RequestSpecificationImpl.groovy:132)
+	at io.restassured.RestAssured.createTestSpecification(RestAssured.java:1492)
+	at io.restassured.RestAssured.given(RestAssured.java:711)
+	at net.serenitybdd.rest.SerenityRest.given(SerenityRest.java:211)
+	at com.gorest.studentinfo.UsersSteps.getUserInfoByemail(UsersSteps.java:44)
+	at com.gorest.studentinfo.UsersCURDTestWithSteps.test002(UsersCURDTestWithSteps.java:52)
+
+test003(com.gorest.studentinfo.UsersCURDTestWithSteps)  Time elapsed: 0.004 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.gorest.studentinfo.UsersCURDTestWithSteps.test003(UsersCURDTestWithSteps.java:62)
+
+test004(com.gorest.studentinfo.UsersCURDTestWithSteps)  Time elapsed: 0.004 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.gorest.studentinfo.UsersCURDTestWithSteps.test004(UsersCURDTestWithSteps.java:72)
+
